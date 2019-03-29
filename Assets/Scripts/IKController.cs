@@ -23,12 +23,19 @@ public class IKController : MonoBehaviour
             if (weight < 1) weight += 0.01f;
             anim.SetLookAtWeight(weight);
             anim.SetLookAtPosition(posForIK);
+
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weight);            
+            anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);            
+            
         }
         else if (weight > 0)
         {
             weight -= 0.01f;
             anim.SetLookAtWeight(weight);
             anim.SetLookAtPosition(posForIK);
+
+            anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weight);
+            anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);
         }
     }
 
