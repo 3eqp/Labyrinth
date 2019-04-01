@@ -9,7 +9,8 @@ public class IKController : MonoBehaviour
     bool near;
     Vector3 posForIK;
     float weight = 0f;
-    
+
+    GameObject working;
 
     void Start()
     {
@@ -18,7 +19,7 @@ public class IKController : MonoBehaviour
 
     private void OnAnimatorIK()
     {
-        if (near)
+        if (working)
         {
             if (weight < 1) weight += 0.01f;
             anim.SetLookAtWeight(weight);
@@ -41,17 +42,18 @@ public class IKController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)//это триггер перса
     {
-        if (other.CompareTag("item"))
+        if (other.CompareTag("Buttery"))
         {
-            print("object was detected"); 
+            print("object was detected");
+
+            working = other.gameObject;
+            posForIK = working.transform.position;
             
-            posForIK = other.transform.position;
-            near = true;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        near = false;
+        working = null;
     }
 }

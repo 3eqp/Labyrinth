@@ -4,29 +4,28 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    private int healths;
+    private int nowHealth;
     private int maxHealth = 200;
     private int minHealth = 0;
-
-    [SerializeField]
-    Renderer[] renderer;
+    private int speedOfdischarge = 5;
+    private new Renderer[] renderer;
         
     public int Healths
     {
-        get { return healths;}
+        get { return nowHealth;}
         set
         {
-            healths = Mathf.Clamp(value, minHealth, maxHealth);
+            nowHealth = Mathf.Clamp(value, minHealth, maxHealth);
             Material newmaterial = renderer[0].material;
             Color newcolor;
-            if (healths >= 100) newcolor = new Color(Persent(200, 100, healths), 1, 0);
-            else newcolor = new Color(1, Persent(0, 100, healths), 0);
+            if (nowHealth >= 100) newcolor = new Color(Persent(200, 100, nowHealth), 1, 0);
+            else newcolor = new Color(1, Persent(0, 100, nowHealth), 0);
             newmaterial.color = newcolor;
             foreach (Renderer m in renderer)
             {
                 m.material = newmaterial;
             }
-           
+            print("Health was changed on " + Healths);
         }
     }
 
@@ -34,21 +33,17 @@ public class Health : MonoBehaviour
     {        
         renderer = GetComponentsInChildren<Renderer>();
         Healths = maxHealth;
+        InvokeRepeating("Buttary", speedOfdischarge, speedOfdischarge);
     }
+
+    void Buttary() => Healths -= 10;
 
     float Persent(float min, float max, float value)
     {
         return Mathf.Abs((min - value) / (max - min));
     }
 
-    void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            print("click was operating");
-            Healths -= 10;
-            print("здоровье сейчас " + Healths);
-        }
-    }
+
+    
 }
 

@@ -23,7 +23,7 @@ public class MovePlayer : NetworkBehaviour
 
             if (z != 0)
             {
-                Vector3 dir = transform.TransformDirection(new Vector3(0f, -3f, z * moveSpeed));
+                Vector3 dir = transform.TransformDirection(new Vector3(0f, -1f, z * moveSpeed));
                 controller.Move(dir);
             }
 
