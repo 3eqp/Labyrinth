@@ -14,9 +14,10 @@ public class AnimationController : NetworkBehaviour {
         anim = GetComponent<Animator>();		
     }
 	
-	void FixedUpdate ()
+	void Update ()
     {
-       
+        if (isLocalPlayer)
+        {
             if (Input.GetKeyDown(KeyCode.W))
             {
                 anim.SetBool("walk", true);
@@ -44,7 +45,7 @@ public class AnimationController : NetworkBehaviour {
             {
                 anim.SetBool("run", false);
             }
-        
+        }
 		
 	}
   
