@@ -73,7 +73,9 @@ ModelImporter:
     optimizeGameObjects: 0
     motionNodeName: 
     rigImportErrors: 
-    rigImportWarnings: 
+    rigImportWarnings: "Avatar Rig Configuration mis-match. Bone length in configuration
+      does not match position in animation file:\n\t'Base HumanRForearm' : position
+      error = 142.912170 mm\n"
     animationImportErrors: 
     animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
       might lower retargeting quality:\nNote: Activate translation DOF on avatar to
@@ -90,7 +92,35 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -301,6 +331,11 @@ ModelImporter:
       position: {x: -0.07936096, y: 0, z: -0.23970032}
       rotation: {x: 0.50000006, y: -0.5, z: -0.4999999, w: 0.5}
       scale: {x: 1, y: 1, z: 1}
+    - name: Base HumanLPlatform
+      parentName: card(Clone)
+      position: {x: -5.0658445, y: -0.00000008094376, z: 0.6013357}
+      rotation: {x: 0.50000006, y: -0.49999994, z: -0.49999994, w: 0.50000006}
+      scale: {x: 1, y: 1, z: 1}
     - name: Base HumanPelvis
       parentName: card(Clone)
       position: {x: -0.07935911, y: 35.59521, z: -3.019831}
@@ -324,7 +359,7 @@ ModelImporter:
     - name: Base HumanRThigh
       parentName: Base HumanPelvis
       position: {x: -0.6645813, y: 1.8120471, z: -3.3953474}
-      rotation: {x: -0.06474197, y: 0.9976071, z: 0.0077417204, w: -0.02299062}
+      rotation: {x: -0.06474198, y: 0.9976071, z: 0.007741721, w: -0.02299062}
       scale: {x: 1, y: 1.0000004, z: 1.0000001}
     - name: Base HumanRCalf
       parentName: Base HumanRThigh
@@ -369,38 +404,18 @@ ModelImporter:
     - name: Base HumanLUpperarm
       parentName: Base HumanLCollarbone
       position: {x: -5.090522, y: 0.0000009536743, z: 0}
-      rotation: {x: 0.27024278, y: 0.5971798, z: 0.009282687, w: 0.755155}
+      rotation: {x: -0.7776027, y: 0.08167956, z: 0.1296519, w: -0.60979754}
       scale: {x: 0.99999934, y: 0.9999993, z: 1.000001}
     - name: Base HumanLForearm
       parentName: Base HumanLUpperarm
       position: {x: -7.041832, y: 0, z: 0}
-      rotation: {x: 0.0692814, y: 0.018062085, z: -0.3273635, w: 0.94218206}
+      rotation: {x: 0.24091884, y: -0.020953914, z: 0.028516527, w: 0.96989995}
       scale: {x: 0.99999887, y: 1.0000007, z: 0.9999999}
     - name: Base HumanLPalm
       parentName: Base HumanLForearm
       position: {x: -10.125278, y: 0.0000009536743, z: 0.0000019073486}
       rotation: {x: -0.38951996, y: 0.085461155, z: 0.05420961, w: 0.91544086}
       scale: {x: 0.9999977, y: 1.0000005, z: 1.0000027}
-    - name: Base HumanRCollarbone
-      parentName: Base HumanRibcage
-      position: {x: 0.6700096, y: 3.9179661, z: -1.162372}
-      rotation: {x: -0.102099635, y: -0.67309576, z: 0.20324816, w: 0.70371014}
-      scale: {x: 0.99999964, y: 1, z: 1.0000005}
-    - name: Base HumanRUpperarm
-      parentName: Base HumanRCollarbone
-      position: {x: -5.0905223, y: 0.0000009536743, z: 0.0000038146973}
-      rotation: {x: -0.27024278, y: -0.59717965, z: 0.009282836, w: 0.7551551}
-      scale: {x: 0.9999995, y: 1.0000005, z: 1.0000004}
-    - name: Base HumanRForearm
-      parentName: Base HumanRUpperarm
-      position: {x: -7.367386, y: 0, z: 0}
-      rotation: {x: -0.069281444, y: -0.01806209, z: -0.3273633, w: 0.9421821}
-      scale: {x: 0.9999985, y: 1.0000011, z: 0.9999995}
-    - name: Base HumanRPalm
-      parentName: Base HumanRForearm
-      position: {x: -9.52866, y: 0, z: 0}
-      rotation: {x: 0.38952002, y: -0.085461244, z: 0.054209583, w: 0.91544086}
-      scale: {x: 0.99999726, y: 1.0000004, z: 1.0000017}
     - name: Base HumanNeck1
       parentName: Base HumanRibcage
       position: {x: -0.030654907, y: -0.13497853, z: -0.00000026077032}
@@ -416,11 +431,26 @@ ModelImporter:
       position: {x: -2.6890564, y: 0, z: 0}
       rotation: {x: -4.5732115e-14, y: -7.1054265e-15, z: 2.8421706e-14, w: 1}
       scale: {x: 1.0000001, y: 1, z: 1.0000001}
-    - name: Base HumanLPlatform
-      parentName: card(Clone)
-      position: {x: -5.0658445, y: -0.00000008094376, z: 0.6013357}
-      rotation: {x: 0.50000006, y: -0.49999994, z: -0.49999994, w: 0.50000006}
-      scale: {x: 1, y: 1, z: 1}
+    - name: Base HumanRCollarbone
+      parentName: Base HumanRibcage
+      position: {x: 0.6700096, y: 3.9179661, z: -1.162372}
+      rotation: {x: 0.7124987, y: 0.09115047, z: 0.60550404, w: -0.34263998}
+      scale: {x: 0.99999964, y: 1, z: 1.0000005}
+    - name: Base HumanRUpperarm
+      parentName: Base HumanRCollarbone
+      position: {x: -5.0905223, y: 0.0000009536743, z: 0.0000038146973}
+      rotation: {x: -0.19558778, y: -0.27014616, z: -0.07702137, w: 0.93959254}
+      scale: {x: 0.9999995, y: 1.0000005, z: 1.0000004}
+    - name: Base HumanRForearm
+      parentName: Base HumanRUpperarm
+      position: {x: -6.94, y: 0.13, z: 5.5}
+      rotation: {x: 0.43859443, y: 0.33395717, z: -0.118951805, w: 0.8258075}
+      scale: {x: 0.9999985, y: 1.0000011, z: 0.9999995}
+    - name: Base HumanRPalm
+      parentName: Base HumanRForearm
+      position: {x: -9.52866, y: 0, z: 0}
+      rotation: {x: 0.38952002, y: -0.085461244, z: 0.054209583, w: 0.91544086}
+      scale: {x: 0.99999726, y: 1.0000004, z: 1.0000017}
     - name: Base HumanRPlatform
       parentName: card(Clone)
       position: {x: 4.9071226, y: -0.00000008094403, z: 0.60133725}
