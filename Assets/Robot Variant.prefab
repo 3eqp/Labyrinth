@@ -248,6 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: {fileID: 4970687765031262633}
+  anim: {fileID: 136678762372987443}
 --- !u!1001 &50707757352953211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -310,6 +311,11 @@ PrefabInstance:
     - target: {fileID: 4352101590155454, guid: 5d4b8d9bd69454796adda85369c542a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 95053828192591688, guid: 5d4b8d9bd69454796adda85369c542a4,
+        type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 137418703124235638, guid: 5d4b8d9bd69454796adda85369c542a4,
         type: 3}

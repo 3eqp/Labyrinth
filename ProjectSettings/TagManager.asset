@@ -6,6 +6,8 @@ TagManager:
   tags:
   - item
   - Buttery
+  - Card
+  - Door
   layers:
   - Default
   - TransparentFX

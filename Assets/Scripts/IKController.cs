@@ -10,21 +10,14 @@ public class IKController : MonoBehaviour
     Vector3 posForIK;
     float weight = 0f;
 
-    GameObject working;
+    GameObject working;    
 
     void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    private void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            anim.SetTrigger("card");
-        }
-    }
-
+   
     private void OnAnimatorIK()
     {
         if (working)
@@ -34,30 +27,29 @@ public class IKController : MonoBehaviour
             anim.SetLookAtPosition(posForIK);
 
             anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weight);            
-            anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);            
+            anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);          
             
         }
         else if (weight > 0)
         {
             weight -= 0.01f;
             anim.SetLookAtWeight(weight);
-            anim.SetLookAtPosition(posForIK);
+           // anim.SetLookAtPosition(posForIK);
 
             anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weight);
-            anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);
+           // anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);
         }
     }
 
     private void OnTriggerEnter(Collider other)//это триггер перса
     {
-        if (other.CompareTag("Buttery"))
-        {
-            print("object was detected");
-
+        if (other.CompareTag("Buttery")||other.CompareTag("Card")|| other.CompareTag("Door"))
+        {          
             working = other.gameObject;
-            posForIK = working.transform.position;
+            posForIK = working.transform.position;            
             
         }
+        
     }
 
     private void OnTriggerExit(Collider other)
