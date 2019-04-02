@@ -17,6 +17,14 @@ public class IKController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("card");
+        }
+    }
+
     private void OnAnimatorIK()
     {
         if (working)
