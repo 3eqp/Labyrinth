@@ -150,18 +150,6 @@ MonoBehaviour:
     i15: 0
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
---- !u!114 &1431364057
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50072716465275261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf3e2652b9194a743bacee7df15d4926, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &3631976548693818693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +194,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f75ac772814e40b468dd9e074cdeba0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &9130720561799715143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50072716465275261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf3e2652b9194a743bacee7df15d4926, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 136678762372987443}
 --- !u!54 &8660207579150289156
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -233,7 +234,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.005
+  m_Radius: 0.01
   m_Center: {x: 0, y: 0.002, z: 0}
 --- !u!114 &320548431406580555
 MonoBehaviour:
@@ -247,8 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd2d59fc7755b8a4aba4d0e2cf2eeba0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: {fileID: 4970687765031262633}
-  anim: {fileID: 136678762372987443}
+  Owner: {fileID: 50072716465275261}
 --- !u!1001 &50707757352953211
 PrefabInstance:
   m_ObjectHideFlags: 0

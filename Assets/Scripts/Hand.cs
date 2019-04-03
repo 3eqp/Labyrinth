@@ -5,28 +5,41 @@ using UnityEngine;
 public class Hand : MonoBehaviour
 {
     [SerializeField]
+    public GameObject Owner;//the owner of the hand
+
     Health health;
-
-    [SerializeField]
     Animator anim;
+    IKController iK;
 
-    public bool HaveACard { get; private set; }   
+    private void Start()
+    {
+        anim = Owner.GetComponent<Animator>();
+        health = Owner.GetComponent<Health>();
+        iK = Owner.GetComponent<IKController>();
+    }
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Buttery"))
+        GameObject obj = collision.gameObject;
+        if(obj.CompareTag("Buttery"))
         {
             health.Healths += 100;
-            Destroy(collision.gameObject);
+            Destroy(obj);
         }
 
-        else if(collision.gameObject.CompareTag("Card"))
+        else if(obj.CompareTag("Card"))
         {
-            collision.gameObject.transform.parent = gameObject.transform;
-            collision.gameObject.transform.position = gameObject.transform.position;
+            obj.transform.parent = gameObject.transform;//changed the parent of the card
+            obj.transform.localPosition = new Vector3(-0.00125f, 0.00374f, 0.00056f);
+            obj.transform.localEulerAngles = new Vector3(200, -100, 100);
             collision.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            HaveACard = true;
+            iK.StopInteraction();           
             print("карта подобрана");
+        }
+
+        else if (collision.gameObject.CompareTag("CardReader"))
+        {
+            iK.StopInteraction();
         }
     }
 

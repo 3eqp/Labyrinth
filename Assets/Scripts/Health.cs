@@ -25,7 +25,7 @@ public class Health : MonoBehaviour
             {
                 m.material = newmaterial;
             }
-            print("Health was changed on " + Healths);
+            
         }
     }
 
