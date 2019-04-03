@@ -7,9 +7,9 @@ public class Health : MonoBehaviour
     private int nowHealth;
     private int maxHealth = 200;
     private int minHealth = 0;
-    private int speedOfdischarge = 5;
+    private int speedOfdischarge = 1;
     private new Renderer[] renderer;
-        
+
     public int Healths
     {
         get { return nowHealth;}
@@ -33,10 +33,31 @@ public class Health : MonoBehaviour
     {        
         renderer = GetComponentsInChildren<Renderer>();
         Healths = maxHealth;
-        InvokeRepeating("Buttary", speedOfdischarge, speedOfdischarge);
+        StartCoroutine(TimerOfButttery());
+    }
+    IEnumerator TimerOfButttery()
+    {
+        yield return new WaitForSeconds(speedOfdischarge);
+        Buttary();
     }
 
-    void Buttary() => Healths -= 10;
+    void Buttary()
+    {
+        Healths -= 10;
+        if (Healths <= 0) Dead();
+        else StartCoroutine(TimerOfButttery());
+    }
+
+    void Dead()
+    {
+        GetComponent<MovePlayer>().enabled = false;
+        print("триггер вызывается");
+        GetComponent<Animator>().SetTrigger("dead");
+        GetComponent<Health>().enabled = false;
+        GetComponent<CharacterController>().enabled = false;
+        transform.position = new Vector3(transform.position.x, -2.5f, transform.position.z);
+    }
+
 
     float Persent(float min, float max, float value)
     {

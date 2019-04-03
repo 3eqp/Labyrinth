@@ -34,12 +34,12 @@ public class MovePlayer : NetworkBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                moveSpeed *= 2.7f;
+                moveSpeed *= 5f;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                moveSpeed /= 2.7f;
+                moveSpeed /= 5f;
             }
         }
     }

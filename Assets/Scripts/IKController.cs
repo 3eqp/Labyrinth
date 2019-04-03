@@ -18,7 +18,7 @@ public class IKController : MonoBehaviour
    
     private void OnAnimatorIK()
     {
-        print(weight);
+
         if (working && !changeTargets)
         {
             if (weight < 1) weight += 0.01f;
