@@ -6942,6 +6942,10 @@ PrefabInstance:
       propertyPath: m_RootBone
       value: 
       objectReference: {fileID: 46193394398361825}
+    - target: {fileID: 1209088477241590, guid: 5d4b8d9bd69454796adda85369c542a4, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4738035220327444, guid: 5d4b8d9bd69454796adda85369c542a4, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0.16855116

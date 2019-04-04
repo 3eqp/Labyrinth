@@ -35,14 +35,9 @@ public class Hand : MonoBehaviour
             obj.transform.localEulerAngles = new Vector3(200, -100, 100);
             collision.gameObject.GetComponent<Rigidbody>().isKinematic = true;
             iK.StopInteraction();
-            MainManager.messenger.WriteMessage("You have found a card!");
+            MainManager.messenger.WriteMessage("You have got a card!");
         }
 
-        else if (collision.gameObject.CompareTag("CardReader"))
-        {
-            iK.StopInteraction();
-            MainManager.messenger.WriteMessage("You need a card!");
-        }
     }
 
   

@@ -26,15 +26,21 @@ public class CardReader : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if(other.gameObject.CompareTag("Card"))
+        if(other.CompareTag("Card"))
         {
             openDoor = true;
             Destroy(other.gameObject);
             other.gameObject.transform.parent.GetComponent<Hand>().Owner.GetComponent<IKController>().StopInteraction();
-           
+            MainManager.messenger.WriteMessage("Door is unlocked!");
         }
-        
-        
+
+        else if (other.CompareTag("Player"))
+        {
+            //other.GetComponent<IKController>().StopInteraction();
+            print("кардридер без карты");
+            MainManager.messenger.WriteMessage("You need a card!");
+        }
+
     }
     
 }
