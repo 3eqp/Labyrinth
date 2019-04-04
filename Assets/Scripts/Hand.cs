@@ -25,6 +25,7 @@ public class Hand : MonoBehaviour
         {
             health.Healths += 100;
             Destroy(obj);
+            MainManager.messenger.WriteMessage("You have charged!");
         }
 
         else if(obj.CompareTag("Card"))
@@ -33,13 +34,14 @@ public class Hand : MonoBehaviour
             obj.transform.localPosition = new Vector3(-0.00125f, 0.00374f, 0.00056f);
             obj.transform.localEulerAngles = new Vector3(200, -100, 100);
             collision.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            iK.StopInteraction();           
-            print("карта подобрана");
+            iK.StopInteraction();
+            MainManager.messenger.WriteMessage("You have found a card!");
         }
 
         else if (collision.gameObject.CompareTag("CardReader"))
         {
             iK.StopInteraction();
+            MainManager.messenger.WriteMessage("You need a card!");
         }
     }
 

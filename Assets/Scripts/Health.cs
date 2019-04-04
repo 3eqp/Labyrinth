@@ -44,7 +44,13 @@ public class Health : MonoBehaviour
     void Buttary()
     {
         Healths -= 10;
-        if (Healths <= 0) Dead();
+        if(Healths <= 50) MainManager.messenger.WriteMessage("You have a low buttery!");
+        if (Healths <= 0)
+        {
+            Dead();
+            MainManager.messenger.WriteMessage("You have a low buttery!");
+        }
+
         else StartCoroutine(TimerOfButttery());
     }
 

@@ -65,6 +65,7 @@ public class IKController : MonoBehaviour
         if (other.CompareTag("Buttery") || other.CompareTag("Card") || other.CompareTag("Door")) 
         {
             Interaction(other.gameObject);
+            MainManager.messenger.WriteMessage("You find a " + other.gameObject.tag);
         }
         
     }
