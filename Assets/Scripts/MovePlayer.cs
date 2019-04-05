@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 public class MovePlayer : NetworkBehaviour
 {
     CharacterController controller;
-    float moveSpeed = 0.15f;
+    float moveSpeed = 15f;    
     float rotateSpeed = 5f;
 
     private void Start()
@@ -34,12 +34,12 @@ public class MovePlayer : NetworkBehaviour
 
             if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                moveSpeed *= 5f;
+                moveSpeed *= 2f;
             }
 
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
-                moveSpeed /= 5f;
+                moveSpeed /= 2f;
             }
         }
     }

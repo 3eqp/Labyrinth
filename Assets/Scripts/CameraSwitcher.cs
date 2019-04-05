@@ -5,6 +5,7 @@ using UnityEngine.Networking;
 
 public class CameraSwitcher : NetworkBehaviour
 {
+    
    
     Camera camera;
 
@@ -15,7 +16,8 @@ public class CameraSwitcher : NetworkBehaviour
 
     void Start()
     {
-        if (!isLocalPlayer) camera.enabled = false;      
+        if (!isLocalPlayer) camera.enabled = false;
+        else GameObject.FindObjectOfType<Creator>().ReadyToStart();
     }
 
 }
