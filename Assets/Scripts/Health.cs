@@ -7,7 +7,7 @@ public class Health : MonoBehaviour
     private int nowHealth;
     private int maxHealth = 200;
     private int minHealth = 0;
-    private int speedOfdischarge = 1;
+    private int speedOfdischarge = 10;
     private new Renderer[] renderer;
 
     public int Healths

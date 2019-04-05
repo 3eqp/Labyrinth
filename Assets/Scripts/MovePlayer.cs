@@ -14,7 +14,7 @@ public class MovePlayer : NetworkBehaviour
         controller = GetComponent<CharacterController>();
     }
 
-    void FixedUpdate()
+    void Update()
     {
         if (isLocalPlayer)
         {
@@ -23,7 +23,7 @@ public class MovePlayer : NetworkBehaviour
 
             if (z != 0)
             {
-                Vector3 dir = transform.TransformDirection(new Vector3(0f, -1f, z * moveSpeed));
+                Vector3 dir = transform.TransformDirection(new Vector3(0f, -1f, z * moveSpeed * Time.deltaTime));
                 controller.Move(dir);
             }
 
