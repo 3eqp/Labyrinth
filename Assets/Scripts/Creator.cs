@@ -16,7 +16,7 @@ public class Creator : MonoBehaviour
     [SerializeField]
     GameObject card;
 
-    int[] randompoints = new int[9];
+    int[] randompoints = new int[10];
 
     int CountOfObject = 0;
 
