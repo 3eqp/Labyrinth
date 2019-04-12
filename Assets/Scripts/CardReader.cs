@@ -18,8 +18,8 @@ public class CardReader : MonoBehaviour
     {
         if(openDoor)
         {
-            door.transform.Translate(Vector3.down * Time.deltaTime);
-            if (door.transform.position.y < -6) Destroy(gameObject);
+            door.transform.Translate(Vector3.down * Time.deltaTime * 2);
+            if (door.transform.position.y < -100) Destroy(gameObject);
         }
     }
 

@@ -16,7 +16,8 @@ public class Creator : MonoBehaviour
     [SerializeField]
     GameObject card;
 
-    int[] randompoints = new int[10];
+    int[] randompoints = new int[10];//в сцене обязательно должно быть 10 поинтов (внутри объекта, 
+    //на котором находится этот скрипт!!!
 
     int CountOfObject = 0;
 
@@ -28,6 +29,19 @@ public class Creator : MonoBehaviour
         mainPlayer.transform.position = GetRandomPoint();
         for (int i = 0; i < CountOfButtery; i++) Instantiate(buttery, GetRandomPoint(), Quaternion.identity);
         for (int i = 0; i < CountOfCards; i++) Instantiate(card, GetRandomPoint(), Quaternion.identity);
+
+        PrepairExits();
+    }
+
+    void PrepairExits()
+    {
+        GameObject[] exits = GameObject.FindGameObjectsWithTag("CardReader");//находим выходы в сцене
+        int Random4ik = Random.Range(0, 3);//рандомим номер выхода
+       for(int i = 0; i< exits.Length;i++)
+        {
+            if (i != Random4ik) Destroy(exits[i]);//удаляем все выходы кроме выпавшего рандомно
+            else exits[i].transform.parent.tag = "Door";//устанавливаем родителю выбранного выхода тэг для открытия
+        }
     }
 
     Vector3 GetRandomPoint()
