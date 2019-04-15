@@ -62,6 +62,7 @@ public class Health : MonoBehaviour
         GetComponent<Health>().enabled = false;
         GetComponent<CharacterController>().enabled = false;
         transform.position = new Vector3(transform.position.x, -2.5f, transform.position.z);
+        MainManager.messenger.WriteMessage("You buttery is discharge");
     }
 
 
