@@ -3539,8 +3539,9 @@ GameObject:
   - component: {fileID: 4352101590155454}
   - component: {fileID: 95053828192591688}
   - component: {fileID: 143864570454773346}
-  - component: {fileID: 114348753623535502}
-  - component: {fileID: 6586940969337595460}
+  - component: {fileID: 2779804051249529551}
+  - component: {fileID: 6738103521771983007}
+  - component: {fileID: 5149797066508747393}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Player
@@ -3604,7 +3605,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 2.9, z: 0}
---- !u!114 &114348753623535502
+--- !u!135 &2779804051249529551
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621440444703750}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 8
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6738103521771983007
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3613,10 +3627,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621440444703750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04f7a33180e2741c98755d3e4a32d4d9, type: 3}
+  m_Script: {fileID: 11500000, guid: bc5bca1c17f23224f9ee33c9c7a79cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6586940969337595460
+--- !u!114 &5149797066508747393
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3625,9 +3639,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621440444703750}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71bb117c432d4314eb764bca96a0b94d, type: 3}
+  m_Script: {fileID: 11500000, guid: bf3e2652b9194a743bacee7df15d4926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 95053828192591688}
 --- !u!1 &1631894494904338
 GameObject:
   m_ObjectHideFlags: 0

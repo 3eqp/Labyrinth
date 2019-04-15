@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class IKController : MonoBehaviour
 {    
-    [SerializeField]
+    
     Animator anim;
     bool changeTargets = false;
     Vector3 posForIK;
