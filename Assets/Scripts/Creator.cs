@@ -16,14 +16,17 @@ public class Creator : MonoBehaviour
     [SerializeField]
     GameObject card;
 
-    int[] randompoints = new int[10];//в сцене обязательно должно быть 10 поинтов (внутри объекта, 
-    //на котором находится этот скрипт!!!
+    [SerializeField]
+    GameObject ai;
+
+    int[] randompoints;
 
     int CountOfObject = 0;
 
    public void ReadyToStart()
     {
         points = GetComponentsInChildren<Transform>();
+        randompoints = new int[points.Length];
         mainPlayer = GameObject.FindGameObjectWithTag("Player");
         //Instantiate(mainPlayer, GetRandomPoint(), Quaternion.identity);
         mainPlayer.transform.position = GetRandomPoint();
@@ -31,6 +34,7 @@ public class Creator : MonoBehaviour
         for (int i = 0; i < CountOfCards; i++) Instantiate(card, GetRandomPoint(), Quaternion.identity);
 
         PrepairExits();
+        Instantiate(ai, GetRandomPoint(), Quaternion.identity);
     }
 
     void PrepairExits()
@@ -44,28 +48,27 @@ public class Creator : MonoBehaviour
         }
     }
 
-    Vector3 GetRandomPoint()
+    Vector3 GetRandomPoint()//рандом с проверкой на занятые ячейки
     {
-        int value = 0;
-        bool ok = true;
-        do
+        
+        if (points.Length == CountOfObject)
         {
-            value = Random.Range(0, points.Length - 1);
-            ok = true;
-            foreach (int v in randompoints)
+            print("больше нет свободных ячеек");
+            return new Vector3(0, 0, 0);
+        }
+
+        int value;
+        while (true)
+        {
+            value = Random.Range(0, randompoints.Length);
+            if(randompoints[value]==0)
             {
-                if (v == value)
-                {
-                    ok = false;
-                    break;
-                }
+                randompoints[value] = ++value;
+                return points[--value].position;
             }
-            
-        } while (!ok);
-
-
-        randompoints[CountOfObject++] = value;
-        return points[value].position;
+        }
+        
+        
     }
 
 
