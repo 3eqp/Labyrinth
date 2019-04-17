@@ -9,6 +9,7 @@ TagManager:
   - Card
   - Door
   - CardReader
+  - AI
   layers:
   - Default
   - TransparentFX
