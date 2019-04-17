@@ -8,7 +8,6 @@ public class Creator : MonoBehaviour
     int CountOfCards = 3;
 
     GameObject mainPlayer;
-    Transform[] points;
 
     [SerializeField]
     GameObject buttery;
@@ -25,8 +24,8 @@ public class Creator : MonoBehaviour
 
    public void ReadyToStart()
     {
-        points = GetComponentsInChildren<Transform>();
-        randompoints = new int[points.Length];
+        
+        randompoints = new int[MainManager.points.Length];
         mainPlayer = GameObject.FindGameObjectWithTag("Player");
         //Instantiate(mainPlayer, GetRandomPoint(), Quaternion.identity);
         mainPlayer.transform.position = GetRandomPoint();
@@ -39,19 +38,19 @@ public class Creator : MonoBehaviour
 
     void PrepairExits()
     {
-        GameObject[] exits = GameObject.FindGameObjectsWithTag("CardReader");//находим выходы в сцене
+        
         int Random4ik = Random.Range(0, 3);//рандомим номер выхода
-       for(int i = 0; i< exits.Length;i++)
+       for(int i = 0; i< MainManager.exits.Length;i++)
         {
-            if (i != Random4ik) Destroy(exits[i]);//удаляем все выходы кроме выпавшего рандомно
-            else exits[i].transform.parent.tag = "Door";//устанавливаем родителю выбранного выхода тэг для открытия
+            if (i != Random4ik) Destroy(MainManager.exits[i]);//удаляем все выходы кроме выпавшего рандомно
+            else MainManager.exits[i].transform.parent.tag = "Door";//устанавливаем родителю выбранного выхода тэг для открытия
         }
     }
 
     Vector3 GetRandomPoint()//рандом с проверкой на занятые ячейки
     {
         
-        if (points.Length == CountOfObject)
+        if (MainManager.points.Length == CountOfObject)
         {
             print("больше нет свободных ячеек");
             return new Vector3(0, 0, 0);
@@ -64,7 +63,7 @@ public class Creator : MonoBehaviour
             if(randompoints[value]==0)
             {
                 randompoints[value] = ++value;
-                return points[--value].position;
+                return MainManager.points[--value].position;
             }
         }
         

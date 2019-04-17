@@ -24,14 +24,14 @@ public class IKController : MonoBehaviour
             if (weight < 1) weight += 0.01f;
             anim.SetLookAtWeight(weight);
             anim.SetLookAtPosition(posForIK);
-            print("waight is raising");
+            //print("waight is raising");
             anim.SetIKPositionWeight(AvatarIKGoal.RightHand, weight);
             anim.SetIKPosition(AvatarIKGoal.RightHand, posForIK);
 
         }
         else if (weight > 0)
         {
-            print("waight is lowering");
+            //print("waight is lowering");
             weight -= 0.01f;
             anim.SetLookAtWeight(weight);
             anim.SetLookAtPosition(posForIK);
@@ -40,7 +40,7 @@ public class IKController : MonoBehaviour
         }
         else
         {
-            print("weight was been lowered");
+           // print("weight was been lowered");
             if (working) posForIK = working.transform.position;
             changeTargets = false;
         }                 
@@ -49,7 +49,7 @@ public class IKController : MonoBehaviour
 
     public void Interaction(GameObject gameObject)
     {
-        print("object was detected");
+        //print("object was detected");
         working = gameObject;
         changeTargets = true;
     }
