@@ -54,10 +54,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01d (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.4
@@ -114,11 +110,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01d (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
     - target: {fileID: 2300002, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300004, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
@@ -137,10 +141,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01c (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.5
@@ -197,10 +197,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01c (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 97c7658838e32184a9a661be69a4ecc9, type: 2}
+    - target: {fileID: 2300000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
 --- !u!4 &657274189000549778 stripped
@@ -216,10 +228,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01b
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.3
@@ -276,11 +284,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01b
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     - target: {fileID: 2300004, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
@@ -299,10 +315,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01c (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.2
@@ -359,10 +371,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01c (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300002, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     - target: {fileID: 2300000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300004, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
 --- !u!4 &1512937019783495010 stripped
@@ -378,10 +402,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01d
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.9
@@ -438,7 +458,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 12.73
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01d
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300002, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
@@ -457,10 +489,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01b (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.7
@@ -517,15 +545,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 2300000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 100000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01b (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 97c7658838e32184a9a661be69a4ecc9, type: 2}
     - target: {fileID: 2300004, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300000, guid: 58ac0d160fc2622418e52717f9401fc0, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
@@ -544,10 +576,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01d (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.6
@@ -604,6 +632,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01d (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -612,6 +644,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 97c7658838e32184a9a661be69a4ecc9, type: 2}
+    - target: {fileID: 2300004, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
 --- !u!4 &2515182845157932463 stripped
@@ -627,10 +663,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01a (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.3661895
@@ -687,11 +719,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01a (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
     - target: {fileID: 2300002, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
@@ -710,10 +750,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01d (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.6
@@ -770,11 +806,19 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01d (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
     - target: {fileID: 2300002, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300004, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
@@ -793,10 +837,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01c
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.4
@@ -853,10 +893,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01c
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300002, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50e04cf96ff351e4da1e14ee52c8b7e1, type: 3}
 --- !u!4 &3389366587571588883 stripped
@@ -872,10 +924,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01b
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.035344
@@ -932,6 +980,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01b
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -959,10 +1011,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01c (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6
@@ -1019,10 +1067,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01c (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
 --- !u!4 &5268097808122552754 stripped
@@ -1038,10 +1098,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01b (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.4
@@ -1098,6 +1154,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01b (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 25e0b84f10949354b96b98b3742acdde, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1125,10 +1185,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01c
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.2
@@ -1185,6 +1241,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01c
+      objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1193,6 +1253,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300004, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07346284acfa6cb46ad146e8c2959d6a, type: 3}
 --- !u!4 &7415252568757551477 stripped
@@ -1208,10 +1272,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01a
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.9
@@ -1268,10 +1328,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01a
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     - target: {fileID: 2300002, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300004, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
 --- !u!4 &7468280358664378275 stripped
@@ -1287,10 +1359,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Sand_01a (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.3
@@ -1347,10 +1415,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Sand_01a (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 97c7658838e32184a9a661be69a4ecc9, type: 2}
+    - target: {fileID: 2300002, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ceb1fa58e1715e4fbff6cf3286098e6, type: 3}
 --- !u!4 &8669915148303504550 stripped
@@ -1366,10 +1446,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2373290676214609093}
     m_Modifications:
-    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
-      propertyPath: m_Name
-      value: EA04_Env_Rocks_Gray_01d (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.2
@@ -1426,10 +1502,22 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Name
+      value: EA04_Env_Rocks_Gray_01d (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f3a5fdff252253f428be724118083694, type: 2}
+    - target: {fileID: 2300002, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
+    - target: {fileID: 2300004, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00b99b82690534e6ab0fe5ab3e92ebe1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f42d8fc0f6cde841a074b842295c590, type: 3}
 --- !u!4 &8998304639830441679 stripped
